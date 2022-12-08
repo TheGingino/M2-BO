@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+.ul{
+    padding-top: 20px;
+}
+body{
+    
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(to left, rgb(83, 72, 83), rgb(70, 27, 27));
+    font-family: sans-serif;
+
+}
+article{
+
+    text-decoration-color: white;
+}
+img{
+    margin-left: 100px;
+    width: 75%;
+    margin-bottom: 30;
+    padding: 20px;
+}
+
+h1{
+    font-size: 36px;
+}
+
+p{
+    padding: 40px;
+    margin-bottom: 40px;
+
+}
