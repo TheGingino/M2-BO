@@ -14,22 +14,33 @@ body{
     font-family: sans-serif;
 }
 
-.navbar{
+#header{
     background-color: rgb(32, 32, 32);
     width: 100%;
-    height: auto;
+    height: auto
+    
 }
 
-.navbar a{
+#header a{
     font-size: 40px;
     margin-right: 20px;
-    padding-bottom: 30px;
-}
-
-.navbar a:hover{
+    padding-top: 30px;
     color: gray;
+    
+    
 }
 
+#header a:hover{
+    color: gray;
+    
+}
+ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
 .tinybar{
     background-color: rgb(136, 136, 136);
     width: 100%;
@@ -70,4 +81,6 @@ img{
     width: 200px;
     padding: 5px;
     height: 100%;
+    display: flex;
+    
 }
