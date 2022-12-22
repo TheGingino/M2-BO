@@ -2,11 +2,9 @@
     padding: 0;
     margin:0;
     box-sizing: border-box;
+    font-family:sans-serif
+}
 
-}
-.ul{
-    padding-top: 20px;
-}
 body{
     color: white;
     font-size: 16px;
@@ -21,8 +19,10 @@ body{
 }
 
 .navbar a{
-    font-size: 40px;
+    font-size: 350%;
     margin-right: 20px;
+    text-decoration: none;
+    color: white;
 }
 
 .navbar a:hover{
@@ -33,6 +33,33 @@ body{
     background-color: rgb(136, 136, 136);
     width: 100%;
     height: 5px;
+}
+
+.mainbackground{
+    width: 100%;
+    height: 850px;
+    background-image: url(../afbeeldingen/achtergrond.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.mainbackground div{
+    width: 50%;
+    height: 300px;
+    z-index: -0;
+}
+
+.mainbackground div h2{
+    font-size: 10px;
+}
+
+.mainbackground div h4{
+    font-size: 50px;
+}
+
+.mainbackground *{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(42, 42, 42);
 }
 
 .HomeButton{
@@ -54,12 +81,17 @@ body{
     transform: scale(1.2);
 }
 
-h1{
-    font-size: 36px;
+.collage{
+    width: 100%;
+    height: 1000px; 
 }
 
-p{
-    padding: 40px;
-    margin-bottom: 40px;
-
+.collage div{
+    width: 200%;
+    height: 200%;
+    background-image: url(../afbeeldingen/Controller.png);
+    background-size: 100px;
+    z-index: -1;
+    opacity: .5;
+    transform: rotate(20deg);
 }
