@@ -103,14 +103,21 @@ p{
 }
 
 .img{
-   display: flex;
-    justify-content:space-between;
+    
+    display: flex;
+    justify-content:space-evenly;
     align-items: flex-start;
+
 }
 
 footer{
-    height: 100%;
-    width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(48, 42, 42);
+  color: white;
+  text-align: center;
 }
 
 .box {
@@ -199,25 +206,7 @@ footer{
   
   }
   
-  .col .social a i {
   
-    color: #0077ff;
-  
-    margin-top: 2rem;
-  
-    margin-right: 5px;
-  
-    transition: 0.3s ease;
-  
-  }
-  
-  .col .social a i:hover {
-  
-    transform: scale(1.5);
-  
-    filter: grayscale(25);
-  
-  }
   
   .col .links a {
   
