@@ -19,13 +19,12 @@ body{
     
 }
 
-#header a{
+.header > a{
     font-size: 50px;
     margin-right: 20px;
     padding-top: 30px;
     color: gray;
-    
-    
+    text-decoration: none;
 }
 
 #header a:hover{
@@ -109,16 +108,31 @@ p{
     align-items: flex-start;
 
 }
+figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.game{
+  width: 60vw;
+  height: 20vh;
+  background: white;
+
+}
 
 footer{
   position: fixed;
   left: 0;
   bottom: 0;
+  height: 500px;
   width: 100%;
   background-color: rgb(48, 42, 42);
   color: white;
   text-align: center;
 }
+
+
 
 .box {
 
