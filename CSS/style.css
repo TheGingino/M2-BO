@@ -7,12 +7,14 @@
 
 body{
     color: white;
+    width: 100vw;
     font-size: 16px;
     background: linear-gradient(to left, rgb(83, 72, 83), rgb(70, 27, 27));
     font-family: sans-serif;
+
 }
 
-#header{
+.header{
     background-color: rgb(32, 32, 32);
     width: auto;
     height: auto
@@ -20,14 +22,14 @@ body{
 }
 
 .header > a{
-    font-size: 50px;
+    font-size: 0px;
     margin-right: 20px;
     padding-top: 30px;
     color: gray;
-    text-decoration: none;
+
 }
 
-#header a:hover{
+.header a:hover{
     color: gray;
     
 }
@@ -38,11 +40,15 @@ ul {
     text-align: center;
     display: flex;
 }
+
+
+
 .tinybar{
     background-color: rgb(136, 136, 136);
     width: 100%;
     height: 5px;
 }
+
 
 .mainbackground{
     width: 100%;
@@ -112,11 +118,11 @@ figure{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 20%;
 }
 .game{
-  width: 60vw;
-  height: 20vh;
+  width: 1500px;
+  height: 500px;
   background: white;
 
 }
@@ -349,3 +355,58 @@ footer{
     background-color: white;
   
   }
+
+
+  header, footer{
+    background-color: #222831;
+    color: white;
+    height: 60px;
+}
+
+main{
+    padding: 40px;
+    min-height: 100vh;
+}
+
+nav{
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    color: firebrick;
+}
+
+nav > ul >li{
+    width: 100%;
+    height: 100%;
+}
+
+.active{
+    background: red;
+}
+
+nav > ul > li > a{
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+
+footer > p{
+    width:60vw;
+    margin: 0 auto;
+    padding-left: 40px;
+}
