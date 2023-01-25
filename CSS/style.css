@@ -357,7 +357,16 @@ footer{
   }
 
 
-  header, footer{
+  .gameScreen{
+    background-color: rgb(54, 54, 54);
+    width: 70%;
+    height: 750px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 75px;
+}
+
+header, footer{
     background-color: #222831;
     color: white;
     height: 60px;
