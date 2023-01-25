@@ -124,3 +124,12 @@ img{
     display: block;
     margin-bottom: 75px;
 }
+
+.tetrisScreen{
+    background-color: rgb(2, 2, 2);
+    width: 35%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 75px; 
+}
