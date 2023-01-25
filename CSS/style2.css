@@ -1,0 +1,439 @@
+*, *::before, *::after{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:sans-serif
+}
+
+body{
+    color: white;
+    width: 100vw;
+    font-size: 16px;
+    background: linear-gradient(to left, rgb(83, 72, 83), rgb(70, 27, 27));
+    font-family: sans-serif;
+
+}
+
+.header{
+    background-color: rgb(32, 32, 32);
+    width: auto;
+    height: auto
+    
+}
+
+.header > a{
+    font-size: 0px;
+    margin-right: 20px;
+    padding-top: 30px;
+    color: gray;
+
+}
+
+.header a:hover{
+    color: gray;
+    
+}
+ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+}
+
+
+
+.tinybar{
+    background-color: rgb(136, 136, 136);
+    width: 100%;
+    height: 5px;
+}
+
+
+.mainbackground{
+    width: 100%;
+    height: 850px;
+    background-image: url(../afbeeldingen/achtergrond.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.mainbackground div{
+    width: 50%;
+    height: 300px;
+    z-index: -0;
+}
+
+.mainbackground div h2{
+    font-size: 10px;
+}
+
+.mainbackground div h4{
+    font-size: 50px;
+}
+
+.mainbackground *{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(42, 42, 42);
+}
+
+.HomeButton{
+    color: rgb(164, 208, 255);
+}
+
+/*article{
+    text-decoration-color: white;
+}*/
+
+.logo{
+    width: 95px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.logo :hover{
+    transform: scale(1.2);
+}
+
+.collage{
+    width: 100%;
+    height: 1000px; 
+}
+
+p{
+    padding: 40px;
+    margin-bottom: 40px;
+
+}
+
+.img{
+    
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+
+}
+figure{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20%;
+}
+.game{
+  width: 1500px;
+  height: 500px;
+  background: white;
+
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 500px;
+  width: 100%;
+  background-color: rgb(48, 42, 42);
+  color: white;
+  text-align: center;
+}
+
+
+
+.box {
+
+    max-width: 1000px;
+  
+    margin: 0 auto;
+  
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    flex-direction: column;
+  
+  }
+  
+  .row {
+  
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+  }
+  
+  
+  
+  .col {
+  
+    min-width: 250px;
+  
+    color: #f2f2f2f2;
+  
+    font-family: "VT323", sans-serif;
+  
+    padding: 0 2rem;
+  
+  }
+  
+  .col .logo {
+  
+    width: 100px;
+  
+    margin-bottom: 25px;
+  
+  }
+  
+  .col h3 {
+  
+    color: #0077ff;
+  
+    margin-bottom: 20px;
+  
+    position: relative;
+  
+    cursor: pointer;
+  
+  }
+  
+  .col h3::after {
+  
+    content: "";
+  
+    height: 3px;
+  
+    width: 0px;
+  
+    background-color: #0077ff;
+  
+    position: absolute;
+  
+    bottom: 0;
+  
+    left: 0;
+  
+    transition: 0.3s ease;
+  
+  }
+  
+  .col h3:hover::after {
+  
+    width: 30px;
+  
+  }
+  
+  
+  
+  .col .links a {
+  
+    display: block;
+  
+    text-decoration: none;
+  
+    color: #f2f2f2;
+  
+    margin-bottom: 5px;
+  
+    position: relative;
+  
+    transition: 0.3s ease;
+  
+  }
+  
+  .col .links a::before {
+  
+    content: "";
+  
+    height: 16px;
+  
+    width: 3px;
+  
+    position: absolute;
+  
+    top: 5px;
+  
+    left: -10px;
+  
+    background-color: #0077ff;
+  
+    transition: 0.5s ease;
+  
+    opacity: 0;
+  
+  }
+  
+  .col .links a:hover::before {
+  
+    opacity: 1;
+  
+  }
+  
+  .col .links a:hover {
+  
+    transform: translateX(-8px);
+  
+    color: #0077ff;
+  
+  }
+  
+  .col .contact-details {
+  
+    display: inline-flex;
+  
+    justify-content: space-between;
+  
+    margin: 10px;
+  
+  }
+  
+  .col .contact-details i {
+  
+    margin-right: 15px;
+  
+    padding: 10px;
+  
+    margin-bottom: 10px;
+  
+  }
+  
+  
+  
+  .col .openingstijden > p {
+  
+    gap: 10px;
+  
+  }
+  
+  
+  
+  .row .form {
+  
+    display: flex;
+  
+    justify-content: center;
+  
+    align-items: center;
+  
+    padding: 2rem 0;
+  
+  }
+  
+  .row .form input {
+  
+    background-color: white;
+  
+    border: 0;
+  
+    outline: none;
+  
+    padding: 14px 20px;
+  
+    border-radius: 6px;
+  
+    border-top-right-radius: 0;
+  
+    border-bottom-right-radius: 0;
+  
+  }
+  
+  .form button {
+  
+    padding: 14px 20px;
+  
+    border: 0;
+  
+    border-radius: 6px;
+  
+    border-top-left-radius: 0;
+  
+    border-bottom-left-radius: 0;
+  
+    background-color: white;
+  
+  }
+
+
+.gameScreen{
+    background-color: rgb(54, 54, 54);
+    width: 70%;
+    height: 750px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 75px;
+}
+
+.tetrisScreen{
+  background-color: rgb(139, 176, 192);
+  width: 35%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 75px; 
+}
+
+.startButton{
+  font-family:Courier;
+  font-size:30px;
+  font-weight:bold;
+  border:none;
+  background-color:#ffffff;
+  color:#000000;
+}
+
+header, footer{
+    background-color: #222831;
+    color: white;
+    height: 60px;
+}
+
+main{
+    padding: 40px;
+    min-height: 100vh;
+}
+
+nav{
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav > ul{
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    color: firebrick;
+}
+
+nav > ul >li{
+    width: 100%;
+    height: 100%;
+}
+
+.active{
+    background: red;
+}
+
+nav > ul > li > a{
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+
+footer > p{
+    width:60vw;
+    margin: 0 auto;
+    padding-left: 40px;
+}

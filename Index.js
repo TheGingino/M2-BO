@@ -213,7 +213,7 @@
 		"tetris-blocks/Z-piece.png",
 		"tetris-blocks/O-piece.png"
 	];
-	const area=makeMatrix(10,20);
+	const area=makeMatrix(12,20);
 	const player={
 		pos:{
 			x:0,
