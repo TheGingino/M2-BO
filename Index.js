@@ -194,14 +194,30 @@
 		context.textBaseline="top";
 		context.fillText("Score:"+player.score,0.2,0);
 	};
-	let gameOver=function(){
-		clearInterval(gameLoop);
-		context.font="2px Comic Sans MS";
-		context.fillStyle="#ffffff";
-		context.textAlign="center";
-		context.textBaseline="middle";
-		context.fillText("Game Over",(canvas.width/20)/2,(canvas.width/20)/2);
-		document.getElementById("start_game").disabled=false;
+	let gameOver=function(hasPlayed){
+		if (hasPlayed == true){
+			clearInterval(gameLoop);
+			context.fillStyle = "red"
+			context.fillRect(0,0,canvas.width, canvas.height)
+			context.font="2px Comic Sans MS";
+			context.fillStyle="#ffffff";
+			context.textAlign="center";
+			context.textBaseline="middle";
+			context.fillText("Game Over",(canvas.width/20)/2,(canvas.width/20)/2);
+			document.getElementById("start_game").disabled=false;
+		}
+		else {
+			clearInterval(gameLoop);
+			context.fillStyle = "blue"
+			context.fillRect(0,0,canvas.width, canvas.height)
+			context.font="2px Comic Sans MS";
+			context.fillStyle="#ffffff";
+			context.textAlign="center";
+			context.textBaseline="middle";
+			context.fillText("Start",(canvas.width/20)/2,(canvas.width/20)/2);
+			document.getElementById("start_game").disabled=false;
+		}
+
 	};
 	const colors=[
 		null,
@@ -213,7 +229,7 @@
 		"tetris-blocks/Z-piece.png",
 		"tetris-blocks/O-piece.png"
 	];
-	const area=makeMatrix(12,20);
+	const area=makeMatrix(10,20);
 	const player={
 		pos:{
 			x:0,
@@ -227,7 +243,7 @@
 	let gameRun=false;
 	playerReset();
 	draw();
-	gameOver();
+	gameOver(false);
 	document.addEventListener('keydown',function(e){
 		if(e.keyCode===37){
 			playerMove(-move);
@@ -254,7 +270,7 @@
 				update();
 			}
 			else{
-				gameOver();
+				gameOver(true);
 			}
 		},10);
 		this.disabled=true;
