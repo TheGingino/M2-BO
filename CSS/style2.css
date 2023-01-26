@@ -165,6 +165,13 @@ footer{
   margin-bottom: 75px; 
 }
 
+.piecesScreen{
+  background-color: rgb(139, 176, 192);
+  width: 15%;
+  height: 40%;
+  margin-bottom: 75px; 
+}
+
 header, footer{
     background-color: #222831;
     color: white;
