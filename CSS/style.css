@@ -199,7 +199,7 @@ figure{
 
 .gameScreen{
     background-color: rgb(54, 54, 54);
-    width: 70%;
+    width: 20vw;
     height: 500px;
     margin: 0 auto;
     display: block;
@@ -208,7 +208,7 @@ figure{
 
 .tetrisScreen{
   background-color: rgb(139, 176, 192);
-  width: 35%;
+  width: 70%;
   height: 100%;
   margin: 0 auto;
   display: block;
@@ -223,6 +223,25 @@ figure{
   background-color:#ffffff;
   color:#000000;
   margin-bottom: auto; 
+}
+
+.reviews{
+  padding: 20px;
+}
+
+article > div > div > div{
+  display: flex;
+}
+
+article > div > div{
+  width: 50%;
+  padding: 40px;
+  margin: 0 auto;
+  display: flex;
+}
+
+article > div > div > img{
+  width: 50%
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
